@@ -16,7 +16,7 @@ namespace Soccer_Manager.Model
             Striker
         };
 
-        enum Nationality
+        enum Team
         {
             Schweiz,
             Frankreich,

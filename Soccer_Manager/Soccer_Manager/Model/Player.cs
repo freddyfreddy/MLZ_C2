@@ -16,7 +16,7 @@ namespace Soccer_Manager.Model
         public enum  Position  { get; set; }
         public int PlayedGames { get; set; }
         public int Goals { get; set; }
-        public enum Nationality { get; set; }
+        public enum Team { get; set; }
 
 
 

@@ -53,8 +53,8 @@
         <TextBox Name="TbJerseyNumber" HorizontalAlignment="Left" Height="23" Margin="444,386,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="TbPlayedGames" HorizontalAlignment="Left" Height="23" Margin="444,450,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="TbGoals" HorizontalAlignment="Left" Height="23" Margin="444,481,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Nationality:" HorizontalAlignment="Left" Margin="263,508,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="CbNationality" HorizontalAlignment="Left" Margin="444,512,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Team:" HorizontalAlignment="Left" Margin="263,508,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CbTeamPlayer" HorizontalAlignment="Left" Margin="444,512,0,0" VerticalAlignment="Top" Width="120"/>
         <Label  Content="Team:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Button Name="BtnDelete" Content="Delete" HorizontalAlignment="Left" Margin="681,469,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Name="BtnUpdate" Content="Update" HorizontalAlignment="Left" Margin="681,494,0,0" VerticalAlignment="Top" Width="75"/>
