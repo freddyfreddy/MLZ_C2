@@ -7,15 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="590.877" Width="800">
     <Grid>
-        <ComboBox Name="CbTeam" HorizontalAlignment="Left" Margin="95,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="CbTeam" HorizontalAlignment="Left" Margin="95,10,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Schweiz" Selected="Event_Select_Swiss"/>
+            <ComboBoxItem Content="Frankreich" Selected="Event_Select_France"/>
+            <ComboBoxItem Content="England" Selected="Event_Select_England"/>
+
+
+        </ComboBox>
 
 
 
 
 
 
-
-        <ListView Name="PlayerLiestView" ItemsSource="{Binding Players}" HorizontalAlignment="Left" Height="471" Margin="10,63,0,0" VerticalAlignment="Top" Width="226">
+        <ListView Name="PlayerListView" ItemsSource="{Binding Players}" HorizontalAlignment="Left" Height="471" Margin="10,63,0,0" VerticalAlignment="Top" Width="226">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -44,15 +49,15 @@
         <Label Content="Position:" HorizontalAlignment="Left" Margin="263,414,0,0" VerticalAlignment="Top"/>
         <Label Content="Number of played Games" HorizontalAlignment="Left" Margin="263,446,0,0" VerticalAlignment="Top"/>
         <Label Content="Number of Goals:" HorizontalAlignment="Left" Margin="263,477,0,0" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Left" Height="155" Margin="263,63,0,0" VerticalAlignment="Top" Width="137"/>
-        <TextBox Name="TbLastname" HorizontalAlignment="Left" Height="23" Margin="444,262,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="TbFirstname" HorizontalAlignment="Left" Height="23" Margin="444,293,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="TbHeight" HorizontalAlignment="Left" Height="23" Margin="444,324,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Image  HorizontalAlignment="Left" Height="155" Margin="263,63,0,0" VerticalAlignment="Top" Width="137"/>
+        <TextBox Name="TbLastname" HorizontalAlignment="Left" Height="23" Margin="444,262,0,0" TextWrapping="Wrap" Text="{Binding Lastname, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TbFirstname" HorizontalAlignment="Left" Height="23" Margin="444,293,0,0" TextWrapping="Wrap" Text="{Binding Firstname, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TbHeight" HorizontalAlignment="Left" Height="23" Margin="444,324,0,0" TextWrapping="Wrap" Text="{Binding Height, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
         <DatePicker Name="DpBirthdate" HorizontalAlignment="Left" Margin="444,351,0,0" VerticalAlignment="Top"/>
         <ComboBox Name="CbPosition" HorizontalAlignment="Left" Margin="444,418,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="TbJerseyNumber" HorizontalAlignment="Left" Height="23" Margin="444,386,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="TbPlayedGames" HorizontalAlignment="Left" Height="23" Margin="444,450,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="TbGoals" HorizontalAlignment="Left" Height="23" Margin="444,481,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TbJerseyNumber" HorizontalAlignment="Left" Height="23" Margin="444,386,0,0" TextWrapping="Wrap" Text="{Binding Jerseynumber, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TbPlayedGames" HorizontalAlignment="Left" Height="23" Margin="444,450,0,0" TextWrapping="Wrap" Text="{Binding Playedgames, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="TbGoals" HorizontalAlignment="Left" Height="23" Margin="444,481,0,0" TextWrapping="Wrap" Text="{Binding Goals, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
         <Label Content="Team:" HorizontalAlignment="Left" Margin="263,508,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="CbTeamPlayer" HorizontalAlignment="Left" Margin="444,512,0,0" VerticalAlignment="Top" Width="120"/>
         <Label  Content="Team:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>

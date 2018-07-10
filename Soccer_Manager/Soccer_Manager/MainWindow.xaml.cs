@@ -23,6 +23,23 @@ namespace Soccer_Manager
         public MainWindow()
         {
             InitializeComponent();
+            //TeamsListView.ItemSource = RequestCachePolicyConverter.GetNation();
+        }
+
+        private void Event_Select_Swiss(object sender, RoutedEventArgs e)
+        {
+            //load Team Schweiz
+            Console.WriteLine("Schweiz ist angewählt");
+        }
+        private void Event_Select_France(object sender, RoutedEventArgs e)
+        {
+            //load Team Frankreich
+            Console.WriteLine("Frankreich ist angewählt");
+        }
+        private void Event_Select_England(object sender, RoutedEventArgs e)
+        {
+            //load Team England
+            Console.WriteLine("England ist angewählt");
         }
     }
 }

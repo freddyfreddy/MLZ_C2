@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soccer_Manager", "Soccer_Manager\Soccer_Manager.csproj", "{DC4647F4-D507-4BE2-9446-166FFE1151E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20_MvvmFramework", "..\..\17I-Egli-Benjamin\20_MvvmFramework\20_MvvmFramework.csproj", "{5463F33A-2F3C-496F-B120-03EEB7195D3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DC4647F4-D507-4BE2-9446-166FFE1151E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC4647F4-D507-4BE2-9446-166FFE1151E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC4647F4-D507-4BE2-9446-166FFE1151E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5463F33A-2F3C-496F-B120-03EEB7195D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5463F33A-2F3C-496F-B120-03EEB7195D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5463F33A-2F3C-496F-B120-03EEB7195D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5463F33A-2F3C-496F-B120-03EEB7195D3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
