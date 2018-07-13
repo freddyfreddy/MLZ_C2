@@ -17,7 +17,7 @@ namespace Soccer_Manager.Model
         public int ID { get; set; }
         public string Lastname { get; set; }
         public string Firstname { get; set; }
-        public string Height { get; set; }
+        public Nullable<int> Height { get; set; }
         public Nullable<System.DateTime> Birthdate { get; set; }
         public Nullable<int> Jerseynumber { get; set; }
         public Nullable<int> PositionID { get; set; }

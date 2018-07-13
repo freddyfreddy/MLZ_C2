@@ -4,13 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Soccer_Manager"
+        xmlns:localviewmodel="clr-namespace:Soccer_Manager.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="590.877" Width="800">
-    <Grid>
+    <Window.DataContext>
+        <localviewmodel:ManagerViewModel/>
+    </Window.DataContext>
+    <Grid Background="{Binding Color}">
         <ComboBox Name="CbTeam" HorizontalAlignment="Left" Margin="95,10,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Schweiz" Selected="Event_Select_Swiss"/>
-            <ComboBoxItem Content="Frankreich" Selected="Event_Select_France"/>
-            <ComboBoxItem Content="England" Selected="Event_Select_England"/>
+            <ComboBoxItem Content="Schweiz" />
+            <ComboBoxItem Content="Frankreich"/>
+            <ComboBoxItem Content="England" />
 
 
         </ComboBox>
@@ -20,26 +24,16 @@
 
 
 
-        <ListView Name="PlayerListView" ItemsSource="{Binding Players}" HorizontalAlignment="Left" Height="471" Margin="10,63,0,0" VerticalAlignment="Top" Width="226">
+        <ListView Name="PlayerListView" ItemsSource="{Binding Playerlist}" HorizontalAlignment="Left" Height="471" Margin="10,63,0,0" VerticalAlignment="Top" Width="226">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
                         <Label Content="{Binding Lastname}" FontWeight="Bold" />
                         <Label Content="{Binding Firstname}" />
-                        <Label Content="{Binding Position}" />
-
-
+                        
                     </StackPanel>
-
-
-
                 </DataTemplate>
-
-
             </ListView.ItemTemplate>
-
-
-
         </ListView>
         <Label  Content="Lastname:" HorizontalAlignment="Left" Margin="263,258,0,0" VerticalAlignment="Top"/>
         <Label  Content="Firstname:" HorizontalAlignment="Left" Margin="263,289,0,0" VerticalAlignment="Top"/>
@@ -54,15 +48,32 @@
         <TextBox Name="TbFirstname" HorizontalAlignment="Left" Height="23" Margin="444,293,0,0" TextWrapping="Wrap" Text="{Binding Firstname, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="TbHeight" HorizontalAlignment="Left" Height="23" Margin="444,324,0,0" TextWrapping="Wrap" Text="{Binding Height, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
         <DatePicker Name="DpBirthdate" HorizontalAlignment="Left" Margin="444,351,0,0" VerticalAlignment="Top"/>
-        <ComboBox Name="CbPosition" HorizontalAlignment="Left" Margin="444,418,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="CbPosition" HorizontalAlignment="Left" Margin="444,418,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Keeper" />
+            <ComboBoxItem Content="Defender" />
+            <ComboBoxItem Content="Middlefield" />
+            <ComboBoxItem Content="Striker" />
+
+
+        </ComboBox>
         <TextBox Name="TbJerseyNumber" HorizontalAlignment="Left" Height="23" Margin="444,386,0,0" TextWrapping="Wrap" Text="{Binding Jerseynumber, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="TbPlayedGames" HorizontalAlignment="Left" Height="23" Margin="444,450,0,0" TextWrapping="Wrap" Text="{Binding Playedgames, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="TbGoals" HorizontalAlignment="Left" Height="23" Margin="444,481,0,0" TextWrapping="Wrap" Text="{Binding Goals, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
         <Label Content="Team:" HorizontalAlignment="Left" Margin="263,508,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="CbTeamPlayer" HorizontalAlignment="Left" Margin="444,512,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CbTeamPlayer" HorizontalAlignment="Left" Margin="444,512,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Schweiz" />
+            <ComboBoxItem Content="Frankreich" />
+            <ComboBoxItem Content="England" />
+          <!--  <ListBox Name="ListBoxNations" ItemsSource="{Binding Nations}" SelectedItem="{Binding Nation}" DisplayMemberPath="Bezeichnung" HorizontalAlignment="Left" Margin="34,73,0,43" Width="136"/>
+       -->
+            </ComboBox>
+
+
+
+
         <Label  Content="Team:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Button Name="BtnDelete" Content="Delete" HorizontalAlignment="Left" Margin="681,469,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Name="BtnUpdate" Content="Update" HorizontalAlignment="Left" Margin="681,494,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Name="BtnAdd" Content="New" HorizontalAlignment="Left" Margin="681,519,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="BtnDelete" Content="Delete" HorizontalAlignment="Left" Margin="681,469,0,0" VerticalAlignment="Top" Width="75" Command="{Binding DeletePlayer}"/>
+        <Button Name="BtnUpdate" Content="Update" HorizontalAlignment="Left" Margin="681,494,0,0" VerticalAlignment="Top" Width="75" Command="{Binding UpdatePlayer}"/>
+        <Button Name="BtnAdd" Content="New" HorizontalAlignment="Left" Margin="681,519,0,0" VerticalAlignment="Top" Width="75" Command="{Binding NewPlayer}"/>
     </Grid>
 </Window>

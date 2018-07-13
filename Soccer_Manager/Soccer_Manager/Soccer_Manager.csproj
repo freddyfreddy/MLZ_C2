@@ -72,33 +72,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DataAccess\PlayerRepository.cs" />
+    <Compile Include="DataAccess\DBAdapter.cs" />
     <Compile Include="Model\Player.cs">
-      <DependentUpon>SoccerEntities.tt</DependentUpon>
+      <DependentUpon>SoccerTeamModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Position.cs">
-      <DependentUpon>SoccerEntities.tt</DependentUpon>
+      <DependentUpon>SoccerTeamModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\SoccerEntities.Context.cs">
+    <Compile Include="Model\SoccerTeamModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SoccerEntities.Context.tt</DependentUpon>
+      <DependentUpon>SoccerTeamModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\SoccerEntities.cs">
+    <Compile Include="Model\SoccerTeamModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SoccerEntities.tt</DependentUpon>
+      <DependentUpon>SoccerTeamModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\SoccerEntities.Designer.cs">
+    <Compile Include="Model\SoccerTeamModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SoccerEntities.edmx</DependentUpon>
+      <DependentUpon>SoccerTeamModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Model\Team.cs">
-      <DependentUpon>SoccerEntities.tt</DependentUpon>
+      <DependentUpon>SoccerTeamModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\PlayerInventoryViewModel.cs" />
+    <Compile Include="ViewModel\ManagerViewModel.cs" />
     <Compile Include="ViewModel\PlayerViewModel.cs" />
+    <Compile Include="ViewModel\PositionViewModel.cs" />
+    <Compile Include="ViewModel\TeamViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -130,17 +132,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="Model\SoccerTeamModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SoccerTeamModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\SoccerTeamModel.edmx.diagram">
+      <DependentUpon>SoccerTeamModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <EntityDeploy Include="Model\SoccerEntities.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SoccerEntities.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Model\SoccerEntities.edmx.diagram">
-      <DependentUpon>SoccerEntities.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -166,22 +168,95 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model\SoccerEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SoccerEntities.Context.cs</LastGenOutput>
-      <DependentUpon>SoccerEntities.edmx</DependentUpon>
-    </Content>
-    <Content Include="Model\SoccerEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SoccerEntities.edmx</DependentUpon>
-      <LastGenOutput>SoccerEntities.cs</LastGenOutput>
-    </Content>
+    <Resource Include="Images\BlerimDzemaili.jpg" />
+    <Resource Include="Images\BreelDonaldEmbolo.jpg" />
+    <Resource Include="Images\BuerkiRoman.jpg" />
+    <Resource Include="Images\DenisLemiZakaria.jpg" />
+    <Resource Include="Images\FabianSchaer.jpg" />
+    <Resource Include="Images\GelsonFernandes.jpg" />
+    <Resource Include="Images\GranitXhaka.jpg" />
+    <Resource Include="Images\HarisSeferovic.jpg" />
+    <Resource Include="Images\JacquesFroncoisMoubandje.jpg" />
+    <Resource Include="Images\JohannesDjourou.jpg" />
+    <Resource Include="Images\JosipDrmic.jpg" />
+    <Resource Include="Images\ManuelAkanji.jpg" />
+    <Resource Include="Images\MarioGavranovic.jpg" />
+    <Resource Include="Images\MichaelLang.jpg" />
+    <Resource Include="Images\MvogoYvon Landry.jpg" />
+    <Resource Include="Images\NicoElvedi.jpg" />
+    <Resource Include="Images\RemoFreuler.jpg" />
+    <Resource Include="Images\RicardoRodriguez.jpg" />
+    <Resource Include="Images\SommerYann.jpg" />
+    <Resource Include="Images\StephanLichtsteiner.jpg" />
+    <Resource Include="Images\StevenZuber.jpg" />
+    <Resource Include="Images\ValonBehrami.jpg" />
+    <Resource Include="Images\XherdanShaqiri.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\17I-Egli-Benjamin\20_MvvmFramework\20_MvvmFramework.csproj">
       <Project>{5463f33a-2f3c-496f-b120-03eeb7195d3e}</Project>
       <Name>20_MvvmFramework</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AshleyYoung.jpg" />
+    <Resource Include="Images\DannyRose.jpg" />
+    <Resource Include="Images\DannyWelbeck.jpg" />
+    <Resource Include="Images\DeleAlli.jpg" />
+    <Resource Include="Images\EricDier.jpg" />
+    <Resource Include="Images\FabianDelph.jpg" />
+    <Resource Include="Images\GaryCahill.jpg" />
+    <Resource Include="Images\HarryKane.jpg" />
+    <Resource Include="Images\HarryMaguire.jpg" />
+    <Resource Include="Images\JackButland.jpg" />
+    <Resource Include="Images\JamieVardy.jpg" />
+    <Resource Include="Images\JesseLingard.jpg" />
+    <Resource Include="Images\JohnStones.jpg" />
+    <Resource Include="Images\JordanHenderson.jpg" />
+    <Resource Include="Images\JordanPickford.jpg" />
+    <Resource Include="Images\KieranTrippier.jpg" />
+    <Resource Include="Images\KyleWalker.jpg" />
+    <Resource Include="Images\MarcusRashford.jpg" />
+    <Resource Include="Images\NickPope.jpg" />
+    <Resource Include="Images\PhilJones.jpg" />
+    <Resource Include="Images\RaheemSterling.jpg" />
+    <Resource Include="Images\RubenLoftus-Cheek.jpg" />
+    <Resource Include="Images\TrentAlexanderArnold.jpg" />
+    <Resource Include="Images\AdilRami.jpg" />
+    <Resource Include="Images\alphonseAreola.jpg" />
+    <Resource Include="Images\AntoineGriezmann.jpg" />
+    <Resource Include="Images\BenjaminMendy.png" />
+    <Resource Include="Images\BenjaminPavard.jpg" />
+    <Resource Include="Images\BlaiseMatuidi.jpg" />
+    <Resource Include="Images\CorentinTolisso.jpg" />
+    <Resource Include="Images\DjibrilSidibe.jpg" />
+    <Resource Include="Images\FlorianThauvin.jpg" />
+    <Resource Include="Images\HugoLloris.jpg" />
+    <Resource Include="Images\KylianMbappe.jpg" />
+    <Resource Include="Images\LucasHernandez.jpg" />
+    <Resource Include="Images\NabilFekir.jpg" />
+    <Resource Include="Images\NgoloKante.jpg" />
+    <Resource Include="Images\OlivierGiroud.jpg" />
+    <Resource Include="Images\OusmaneDembele.jpg" />
+    <Resource Include="Images\PaulPogba.jpg" />
+    <Resource Include="Images\PresnelKimpembe.jpg" />
+    <Resource Include="Images\RaphaelVarane.jpg" />
+    <Resource Include="Images\SamuelUmtiti.jpg" />
+    <Resource Include="Images\SteveMandanda.jpg" />
+    <Resource Include="Images\StevenNzonzi.jpg" />
+    <Resource Include="Images\ThomasLemar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\SoccerTeamModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SoccerTeamModel.edmx</DependentUpon>
+      <LastGenOutput>SoccerTeamModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\SoccerTeamModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SoccerTeamModel.edmx</DependentUpon>
+      <LastGenOutput>SoccerTeamModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
