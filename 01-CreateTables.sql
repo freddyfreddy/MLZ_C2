@@ -36,7 +36,7 @@ create table Player
 	ID			int	identity(1,1)	not null,
 	Lastname			varchar (80)	null,
 	Firstname			varchar(80)		null,
-	Height				varchar (80)	null,
+	Height				int				null,
 	Birthdate			date			null,
 	Jerseynumber		int				null,
 	PositionID			int				null,
