@@ -12,9 +12,9 @@
     </Window.DataContext>
     <Grid Background="{Binding Color}">
         <ComboBox Name="CbTeam" HorizontalAlignment="Left" Margin="95,10,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Schweiz" />
-            <ComboBoxItem Content="Frankreich"/>
-            <ComboBoxItem Content="England" />
+            <ComboBoxItem Content="Schweiz" Selected="Event_Select_Swiss" />
+            <ComboBoxItem Content="Frankreich" Selected="Event_Select_France" />
+            <ComboBoxItem Content="England" Selected="Event_Select_England" />
 
 
         </ComboBox>

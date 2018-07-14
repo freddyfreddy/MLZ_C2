@@ -27,5 +27,34 @@ namespace Soccer_Manager
         {
             InitializeComponent();
         }
+
+
+        public void Event_Select_Swiss(object sender, RoutedEventArgs e)
+        {
+            //load Team Schweiz
+            Console.WriteLine("Schweiz ist angewählt");
+
+            DBAdapter.GetPlayersFromNation(1);
+            //StatusColor = "Red";
+
+
+        }
+        private void Event_Select_France(object sender, RoutedEventArgs e)
+        {
+            //load Team Frankreich
+            Console.WriteLine("Frankreich ist angewählt");
+
+            DBAdapter.GetPlayersFromNation(2);
+            //StatusColor = "Blue";
+        }
+        private void Event_Select_England(object sender, RoutedEventArgs e)
+        {
+            //load Team England
+            Console.WriteLine("England ist angewählt");
+
+            DBAdapter.GetPlayersFromNation(3);
+            //StatusColor = "Orange";
+        }
+
     }
 }

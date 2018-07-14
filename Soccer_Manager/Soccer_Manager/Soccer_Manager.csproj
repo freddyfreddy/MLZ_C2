@@ -168,85 +168,81 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\BlerimDzemaili.jpg" />
-    <Resource Include="Images\BreelDonaldEmbolo.jpg" />
-    <Resource Include="Images\BuerkiRoman.jpg" />
-    <Resource Include="Images\DenisLemiZakaria.jpg" />
-    <Resource Include="Images\FabianSchaer.jpg" />
-    <Resource Include="Images\GelsonFernandes.jpg" />
-    <Resource Include="Images\GranitXhaka.jpg" />
-    <Resource Include="Images\HarisSeferovic.jpg" />
-    <Resource Include="Images\JacquesFroncoisMoubandje.jpg" />
-    <Resource Include="Images\JohannesDjourou.jpg" />
-    <Resource Include="Images\JosipDrmic.jpg" />
-    <Resource Include="Images\ManuelAkanji.jpg" />
-    <Resource Include="Images\MarioGavranovic.jpg" />
-    <Resource Include="Images\MichaelLang.jpg" />
-    <Resource Include="Images\MvogoYvon Landry.jpg" />
-    <Resource Include="Images\NicoElvedi.jpg" />
-    <Resource Include="Images\RemoFreuler.jpg" />
-    <Resource Include="Images\RicardoRodriguez.jpg" />
-    <Resource Include="Images\SommerYann.jpg" />
-    <Resource Include="Images\StephanLichtsteiner.jpg" />
-    <Resource Include="Images\StevenZuber.jpg" />
-    <Resource Include="Images\ValonBehrami.jpg" />
-    <Resource Include="Images\XherdanShaqiri.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\..\17I-Egli-Benjamin\20_MvvmFramework\20_MvvmFramework.csproj">
       <Project>{5463f33a-2f3c-496f-b120-03eeb7195d3e}</Project>
       <Name>20_MvvmFramework</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\AshleyYoung.jpg" />
-    <Resource Include="Images\DannyRose.jpg" />
-    <Resource Include="Images\DannyWelbeck.jpg" />
-    <Resource Include="Images\DeleAlli.jpg" />
-    <Resource Include="Images\EricDier.jpg" />
-    <Resource Include="Images\FabianDelph.jpg" />
-    <Resource Include="Images\GaryCahill.jpg" />
-    <Resource Include="Images\HarryKane.jpg" />
-    <Resource Include="Images\HarryMaguire.jpg" />
-    <Resource Include="Images\JackButland.jpg" />
-    <Resource Include="Images\JamieVardy.jpg" />
-    <Resource Include="Images\JesseLingard.jpg" />
-    <Resource Include="Images\JohnStones.jpg" />
-    <Resource Include="Images\JordanHenderson.jpg" />
-    <Resource Include="Images\JordanPickford.jpg" />
-    <Resource Include="Images\KieranTrippier.jpg" />
-    <Resource Include="Images\KyleWalker.jpg" />
-    <Resource Include="Images\MarcusRashford.jpg" />
-    <Resource Include="Images\NickPope.jpg" />
-    <Resource Include="Images\PhilJones.jpg" />
-    <Resource Include="Images\RaheemSterling.jpg" />
-    <Resource Include="Images\RubenLoftus-Cheek.jpg" />
-    <Resource Include="Images\TrentAlexanderArnold.jpg" />
-    <Resource Include="Images\AdilRami.jpg" />
-    <Resource Include="Images\alphonseAreola.jpg" />
-    <Resource Include="Images\AntoineGriezmann.jpg" />
-    <Resource Include="Images\BenjaminMendy.png" />
-    <Resource Include="Images\BenjaminPavard.jpg" />
-    <Resource Include="Images\BlaiseMatuidi.jpg" />
-    <Resource Include="Images\CorentinTolisso.jpg" />
-    <Resource Include="Images\DjibrilSidibe.jpg" />
-    <Resource Include="Images\FlorianThauvin.jpg" />
-    <Resource Include="Images\HugoLloris.jpg" />
-    <Resource Include="Images\KylianMbappe.jpg" />
-    <Resource Include="Images\LucasHernandez.jpg" />
-    <Resource Include="Images\NabilFekir.jpg" />
-    <Resource Include="Images\NgoloKante.jpg" />
-    <Resource Include="Images\OlivierGiroud.jpg" />
-    <Resource Include="Images\OusmaneDembele.jpg" />
-    <Resource Include="Images\PaulPogba.jpg" />
-    <Resource Include="Images\PresnelKimpembe.jpg" />
-    <Resource Include="Images\RaphaelVarane.jpg" />
-    <Resource Include="Images\SamuelUmtiti.jpg" />
-    <Resource Include="Images\SteveMandanda.jpg" />
-    <Resource Include="Images\StevenNzonzi.jpg" />
-    <Resource Include="Images\ThomasLemar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
+    <Resource Include="Images\Teams\England\AshleyYOUNG.png" />
+    <Resource Include="Images\Teams\England\DannyROSE.png" />
+    <Resource Include="Images\Teams\England\DannyWELBECK.png" />
+    <Resource Include="Images\Teams\England\DeleALLI.png" />
+    <Resource Include="Images\Teams\England\EricDIER.png" />
+    <Resource Include="Images\Teams\England\FabianDELPH.png" />
+    <Resource Include="Images\Teams\England\GaryCAHILL.png" />
+    <Resource Include="Images\Teams\England\HarryKANE.png" />
+    <Resource Include="Images\Teams\England\HarryMAGUIRE.png" />
+    <Resource Include="Images\Teams\England\JackBUTLAND.png" />
+    <Resource Include="Images\Teams\England\JamieVARDY.png" />
+    <Resource Include="Images\Teams\England\JesseLINGARD.png" />
+    <Resource Include="Images\Teams\England\JohnSTONES.png" />
+    <Resource Include="Images\Teams\England\JordanHENDERSON.png" />
+    <Resource Include="Images\Teams\England\JordanPICKFORD.png" />
+    <Resource Include="Images\Teams\England\KieranTRIPPIER.png" />
+    <Resource Include="Images\Teams\England\KyleWALKER.png" />
+    <Resource Include="Images\Teams\England\MarcusRASHFORD.png" />
+    <Resource Include="Images\Teams\England\NickPOPE.png" />
+    <Resource Include="Images\Teams\England\PhilJONES.png" />
+    <Resource Include="Images\Teams\England\RaheemSTERLING.png" />
+    <Resource Include="Images\Teams\England\RubenLOFTUS-CHEEK.png" />
+    <Resource Include="Images\Teams\England\TrentALEXANDER-ARNOLD.png" />
+    <Resource Include="Images\Teams\France\AdilRAMI.png" />
+    <Resource Include="Images\Teams\France\AlphonseAREOLA.png" />
+    <Resource Include="Images\Teams\France\AntoineGRIEZMANN.png" />
+    <Resource Include="Images\Teams\France\BenjaminMENDY.png" />
+    <Resource Include="Images\Teams\France\BenjaminPAVARD.png" />
+    <Resource Include="Images\Teams\France\BlaiseMATUIDI.png" />
+    <Resource Include="Images\Teams\France\CorentinTOLISSO.png" />
+    <Resource Include="Images\Teams\France\DjibrilSIDIBE.png" />
+    <Resource Include="Images\Teams\France\FlorianTHAUVIN.png" />
+    <Resource Include="Images\Teams\France\HugoLLORIS.png" />
+    <Resource Include="Images\Teams\France\KylianMBAPPE.png" />
+    <Resource Include="Images\Teams\France\LucasHERNANDEZ.png" />
+    <Resource Include="Images\Teams\France\NabilFEKIR.png" />
+    <Resource Include="Images\Teams\France\NgoloKANTE.png" />
+    <Resource Include="Images\Teams\France\OlivierGIROUD.png" />
+    <Resource Include="Images\Teams\France\OusmaneDEMBELE.png" />
+    <Resource Include="Images\Teams\France\PaulPOGBA.png" />
+    <Resource Include="Images\Teams\France\PresnelKIMPEMBE.png" />
+    <Resource Include="Images\Teams\France\RaphaelVARANE.png" />
+    <Resource Include="Images\Teams\France\SamuelUMTITI.png" />
+    <Resource Include="Images\Teams\France\SteveMANDANDA.png" />
+    <Resource Include="Images\Teams\France\StevenNZONZI.png" />
+    <Resource Include="Images\Teams\France\ThomasLEMAR.png" />
+    <Resource Include="Images\Teams\Swiss\BlerimDZEMAILI.png" />
+    <Resource Include="Images\Teams\Swiss\BreelEMBOLO.png" />
+    <Resource Include="Images\Teams\Swiss\DenisZAKARIA.png" />
+    <Resource Include="Images\Teams\Swiss\FabianSCHAER.png" />
+    <Resource Include="Images\Teams\Swiss\FrancoisMOUBANDJE.png" />
+    <Resource Include="Images\Teams\Swiss\GelsonFERNANDES.png" />
+    <Resource Include="Images\Teams\Swiss\GranitXHAKA.png" />
+    <Resource Include="Images\Teams\Swiss\HarisSEFEROVIC.png" />
+    <Resource Include="Images\Teams\Swiss\JohanDJOUROU.png" />
+    <Resource Include="Images\Teams\Swiss\JosipDRMIC.png" />
+    <Resource Include="Images\Teams\Swiss\ManuelAKANJI.png" />
+    <Resource Include="Images\Teams\Swiss\MarioGAVRANOVIC.png" />
+    <Resource Include="Images\Teams\Swiss\MichaelLANG.png" />
+    <Resource Include="Images\Teams\Swiss\NicoELVEDI.png" />
+    <Resource Include="Images\Teams\Swiss\RemoFREULER.png" />
+    <Resource Include="Images\Teams\Swiss\RicardoRODRIGUEZ.png" />
+    <Resource Include="Images\Teams\Swiss\RomanBUERKI.png" />
+    <Resource Include="Images\Teams\Swiss\StephanLICHTSTEINER.png" />
+    <Resource Include="Images\Teams\Swiss\StevenZUBER.png" />
+    <Resource Include="Images\Teams\Swiss\ValonBEHRAMI.png" />
+    <Resource Include="Images\Teams\Swiss\XherdanSHAQIRI.png" />
+    <Resource Include="Images\Teams\Swiss\YannSOMMER.png" />
+    <Resource Include="Images\Teams\Swiss\YvonMVOGO.png" />
     <Content Include="Model\SoccerTeamModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SoccerTeamModel.edmx</DependentUpon>
@@ -258,6 +254,7 @@
       <LastGenOutput>SoccerTeamModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <SsdtUnitTestVersion>3.1</SsdtUnitTestVersion>

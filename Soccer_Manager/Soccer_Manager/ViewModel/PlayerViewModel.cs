@@ -14,56 +14,29 @@ namespace Soccer_Manager.ViewModel
 {
     public class PlayerViewModel : ObservableCollection
     {
-
-        private ObservableCollection<Player> _players = new ObservableCollection<Player>();
-        // private team variable
-        private Player _player;
         public PlayerViewModel()
         {
             _player = new Player();
+            
         }
+        private ObservableCollection<Player> _players = new ObservableCollection<Player>();
+        // private team variable
+        private Player _player;
+        public ObservableCollection<Position> PositionsList { get; }
+
         // prop team
         public ObservableCollection<Player> Players
         {
             get => _players;
             set => _players = value;
         }
-        //add team to team collection
-        
-
        
 
-     
-
-
-
-
-
-
-
-        //Team team = (from t in ContextBoundObject.Team1.Include("Player")
-        //             where t.TeamID == 1
-        //             select t).FirstOrDefault();
-
-        //return pList;
-
-        //public string Color
-        //{
-
-        //    get
-        //    {
-                
-        //        return _player.Color;
-        //    }
-        //    set
-        //    {
-        //        _player.Color = value;
-
-        //        RaisePropertyChanged();
-        //    }
-        //}
-
-
+        public byte[] Picture
+        {
+            get => _player.Picture;
+            set => _player.Picture = value;
+        }
 
         public string Lastname
         {
@@ -158,6 +131,18 @@ namespace Soccer_Manager.ViewModel
                 _player.TeamID = value;
                 RaisePropertyChanged();
             }
+        }
+
+
+        public virtual Position Position
+        {
+            get => _player.Position;
+            set => _player.Position = value;
+        }
+        public virtual Team Team
+        {
+            get => _player.Team;
+            set => _player.Team = value;
         }
 
         #region Commands
